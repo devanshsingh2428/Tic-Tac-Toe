@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #12ab70, #bbc845);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+}
+
+.ticTac {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: #fff;
+    color: #2E1F26;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #be7b4f0e, #7f5669);
+    color: #fff;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #C87740;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #2E1F26;
+    color: #CCDA47;
+    transform: scale(1.05);
+}
